@@ -17,17 +17,33 @@
 
 	p{
 		border: 2px solid black; 
-		background-color: 	#808080;
+		background-color: #808080;
 		padding: 20px 40px 20px 40px; 
 		width: 90%;
-		height: 150px;
+		height: 190px;
 		margin-right: auto;
 		margin-left: auto;
 		font-family: Helvetica; 
 		color: white;
 
+	
 	}
 
+	bloque {
+    width: 120px;
+    height: 35px;
+    line-height: 50px;
+    font-size: inherit; /* Indiferente */
+    float: right; /* Y (relacionado con align-items) */
+    text-align: center;
+    color: white;
+    border: 2px solid black; 
+    margin-top: -20px; 
+    margin-right: -42px;
+
+}
+
+	
 	#content{
 		background-color: #d0166a;
 	}
@@ -39,7 +55,11 @@
 		.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,
 		.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12 {
 			float: left;
-			border: 1px solid green; 
+			border: 1px ; 
+			 position: relative;
+			 left: 160px;
+			
+
 		}
 		.col-lg-1{
 			width: 8.33%;
@@ -48,7 +68,8 @@
 			width: 16.66%;
 		}
 		.col-lg-3{
-			width: 25%; 
+			width: 25%;
+
 		}
 		.col-lg-4{
 			width: 33%;
@@ -83,8 +104,9 @@
 		.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,
 		.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
 			float:left;
-		   border: 1px solid green; 
-
+		   border: 1px ; 
+		   position: relative;
+		   left: 160px;
 		}
 		.col-md-1 {
 			width: 8.33%;
@@ -94,6 +116,7 @@
 		}
 		.col-md-3 {
 			width: 25%;
+
 		}
 		.col-md-4 {
 			width: 33%;
@@ -128,14 +151,26 @@
 
 <body> 
 	<h1 align="center"> Our Menu  </h1>
-	<div class="row"> 
-		<div class="col-lg-3 col-md-6"><p>Item 1 </p></div>
-		<div class="col-lg-3 col-md-6"><p>Item 2</p></div>
-	    <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
+	
+    <div class="row"> 
+		    <div class="col-lg-3 col-md-6"><p><bloque style="background-color:#F1948A"><font color="black"><b>Chicken</b></font></bloque><br>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt
+		    ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquid ex ea commodo consequat.</p> 
+                 
+		    </div>
+			<div class="col-lg-3 col-md-6"><p><bloque style="background-color:#C0392B"><b>Beef</b></bloque><br>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt
+		    ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquid ex ea commodo consequat. </p>
+		     </div>
 
-	</div>
+
+			<div class="col-lg-3 col-md-6"><p><bloque style="background-color: #F9E79F"><font color="black" weight="bold"><b>Sushi</b></font></bloque><br>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt
+		    ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquid ex ea commodo consequat.</p> 
+
+		</div>
+    </div>
+
 	
 </body>
 
 
 </html>
+
